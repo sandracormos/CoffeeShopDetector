@@ -11,6 +11,7 @@
             this.CoordinateY = coordinateY;
         }
 
+        //Calculate Distance using Euclidean Distance Formula
         public double DistanceToCoffeeShop(CoffeeShop coffeeShop)
         {
 

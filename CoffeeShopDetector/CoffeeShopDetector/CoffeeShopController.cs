@@ -15,6 +15,7 @@ namespace CoffeeShopDetector
             this.repository = repository;
         }
 
+        //Finds the top 3 nearest CoffeeShops to the given user location
         public List<(CoffeeShop, double Distance)> FindClosestCoffeeShops(Location userLocation, int coffeeShopCount)
         {
             List<(CoffeeShop, double Distance)> CoffeeShopsNearMe = new List<(CoffeeShop, double Distance)>();
@@ -25,7 +26,7 @@ namespace CoffeeShopDetector
                 CoffeeShopsNearMe.Add((shop, cs));
             }
 
-            return CoffeeShopsNearMe.OrderBy(t => t.Item2).ToList();
+            return CoffeeShopsNearMe.OrderBy(t => t.Item2).Take(3).ToList();
         }
     }
 }
