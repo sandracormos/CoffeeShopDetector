@@ -1,4 +1,5 @@
-# Coffee Shops CSV Loader
+# Coffee Shops Finder
+<img src="coffeePhoto.jpg" align="right" width="150" height="150">
 
 ## Overview
 
@@ -11,7 +12,6 @@ This project is a command-line application that determines the three closest cof
 - Asynchronous operations to ensure non-blocking functionality.
 - Handles both HTTP URLs and local file paths.
 
-- 
 ## Getting Started
 
 ### Prerequisites
@@ -38,6 +38,8 @@ This will calculate and print the three closest coffee shops to the user based o
 ## Handling Malformed Data
 
 If the program encounters any malformed data entries in the CSV file (such as missing or invalid coordinates), it will exit with an error message.
+
+
 
 Example Output: 
 - Starbucks Seattle2,0.0645
